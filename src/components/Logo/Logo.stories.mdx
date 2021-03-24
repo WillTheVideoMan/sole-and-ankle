@@ -1,0 +1,13 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Logo from "./Logo";
+
+<Meta title="Logo" component={Logo} />
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ id: "search", size: "24", colour: "currentColor" }}
+  >
+    {(args) => <Logo {...args} />}
+  </Story>
+</Canvas>

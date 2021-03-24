@@ -1,0 +1,13 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Header from "./Header";
+
+<Meta title="Header" component={Header} />
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ message: "Free shipping on domestic orders over $75!" }}
+  >
+    {(args) => <Header {...args} />}
+  </Story>
+</Canvas>

@@ -1,0 +1,34 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import Icon from "./Icon";
+
+<Meta
+  title="Icon"
+  component={Icon}
+  argTypes={{
+    id: {
+      control: {
+        type: "select",
+        options: ["search", "menu", "shopping-bag", "chevron-down"],
+      },
+    },
+    size: {
+      control: {
+        type: "number",
+      },
+    },
+    colour: {
+      control: {
+        type: "text",
+      },
+    },
+  }}
+/>
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ id: "search", size: "24", colour: "currentColor" }}
+  >
+    {(args) => <Icon {...args} />}
+  </Story>
+</Canvas>

@@ -1,0 +1,13 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import SuperHeader from "./SuperHeader";
+
+<Meta title="SuperHeader" component={SuperHeader} />
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{ message: "Free shipping on domestic orders over $75!" }}
+  >
+    {(args) => <SuperHeader {...args} />}
+  </Story>
+</Canvas>

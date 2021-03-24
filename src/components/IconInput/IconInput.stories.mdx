@@ -1,0 +1,36 @@
+import { Meta, Story, Canvas } from "@storybook/addon-docs/blocks";
+import IconInput from "./IconInput";
+
+<Meta
+  title="IconInput"
+  component={IconInput}
+  argTypes={{
+    icon: {
+      control: {
+        type: "select",
+        options: ["search", "menu", "shopping-bag", "chevron-down"],
+      },
+    },
+    placeholder: {
+      control: {
+        type: "text",
+      },
+    },
+    size: { control: { type: "select", options: ["mini", "small", "large"] } },
+    label: { control: { type: "text" } },
+  }}
+/>
+
+<Canvas>
+  <Story
+    name="Default"
+    args={{
+      icon: "search",
+      placeholder: "Search",
+      size: "small",
+      label: "Search",
+    }}
+  >
+    {(args) => <IconInput {...args} />}
+  </Story>
+</Canvas>
