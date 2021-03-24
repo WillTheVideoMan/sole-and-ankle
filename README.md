@@ -1,3 +1,5 @@
+> I got half way through trying to do it from scratch and then gave up and copied the boilerplate... Still good to practice NextJS config with Storybook.
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
